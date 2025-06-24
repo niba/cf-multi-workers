@@ -1,0 +1,24 @@
+{
+	"$schema": "https://turborepo.com/schema.json",
+	"tasks": {
+		"build": {
+			"outputs": ["dist/**"],
+			"dependsOn": ["cf-typegen"]
+		},
+		"lint": {},
+		"serve": {
+			"dependsOn": ["^build"]
+		},
+		"cf-typegen": {
+			"dependsOn": ["^cf-typegen"]
+		},
+		"check-types": {
+			"dependsOn": ["^check-types"]
+		},
+		"dev": {
+			"dependsOn": ["cf-typegen", "^build", "lint"],
+			"persistent": true,
+			"cache": false
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "root",
+	"scripts": {
+		"build": "turbo run build",
+		"test": "pnpm -r test",
+		"ver": "tsc --version",
+		"format": "pnpm -r format",
+		"lint": "pnpm -r lint",
+		"dev": "turbo run cf-typegen && turbo --ui tui run dev"
+	},
+	"packageManager": "pnpm@10.12.1",
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"wrangler": "^4.21.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.0.5",
+		"turbo": "^2.5.4",
+		"typescript": "^5.8.3",
+		"vitest": "^3.2.4"
+	}
+}

@@ -1,0 +1,11 @@
+packages:
+  - packages/*
+
+catalog:
+  react: 19.1.0
+  react-dom: 19.1.0
+  effect: 3.16.8
+  '@effect/platform': 0.85.2
+
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'

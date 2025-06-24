@@ -1,0 +1,17 @@
+{
+	"name": "service",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "sleep 5 && wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.43",
+		"typescript": "^5.8.3",
+		"vitest": "~3.2.4"
+	}
+}
